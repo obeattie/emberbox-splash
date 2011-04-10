@@ -127,12 +127,12 @@ a {
         padding: 60px 0 60px 170px;
     }
     
-    #content #fb, #content #postman {
+    #content #fb, #content #postman, #content #email {
         margin: 0 0 20px 130px;
         color: #a3a3a3;
     }
     
-        #content #fb a, #content #postman a {
+        #content #fb a, #content #postman a, #content #email a {
             padding-left: 40px;
         }
         
@@ -147,3 +147,7 @@ a {
             #content #postman span {
                 font-size: 15px;
             }
+        
+        #content #email a {
+            background: url('../img/envelope.png') 9px 5px no-repeat;
+        }
