@@ -65,6 +65,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 1;
+    width: 650px;
 }
 
     /* Arrivals board */
