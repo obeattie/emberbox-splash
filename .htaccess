@@ -1,0 +1,3 @@
+<IfModule mod_headers.c>
+    Header set X-Powered-By "Sol, Gin and Jack Daniels'"
+</IfModule>
