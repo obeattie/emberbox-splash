@@ -1,0 +1,148 @@
+/* -----
+   Emberbox splash page CSS
+   
+   @author obeattie
+   -----
+*/
+
+@import url('reset.css');
+
+html {
+    background: #fff;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #2a2a2a;
+    font: 18px/1.8 Calibri, GillSans, Trebuchet, sans-serif;
+    height: 100%;
+    /* Thin is always in */
+    -webkit-text-stroke: 1px transparent;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:active {
+        text-decoration: underline;
+    }
+
+::selection {
+    background: #fef200;
+}
+
+/* Heading */
+#heading {
+    background: #fef200 url('../img/landing.png') 315px center no-repeat;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    font-size: 50px;
+    z-index: 2;
+}
+
+    #heading h3 {
+        margin-left: 390px;
+    }
+    
+    #heading ::selection {
+        background: #fff;
+    }
+
+/* Content */
+#content {
+    margin: 0 0 0 220px;
+    border-left: 1px solid #e8e8e8;
+    padding: 0 20px 0 0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+    /* Arrivals board */
+    #board {
+        padding-top: 270px;
+        list-style: none;
+    }
+    
+        #board li {
+            display: block;
+            clear: both;
+        }
+        
+            #board span {
+                display: block;
+                float: left;
+                margin: 0 10px;
+            }
+            
+            #board .id {
+                display: block;
+                width: 150px;
+                text-align: right;
+                color: #6b6b6b;
+                margin-left: 0;
+                text-transform: uppercase;
+            }
+            
+            #board .origin {
+                font-size: 22px;
+                position: relative;
+                top: -.25em;
+                width: 300px;
+            }
+            
+            #board .status {
+                text-transform: uppercase;
+                color: #6b6b6b;
+                width: 150px;
+            }
+            
+            #board li:first-child, #board li:last-child {
+                opacity: .2;
+            }
+            
+            #board li:nth-child(2), #board li:nth-last-child(2) {
+                opacity: .4;
+            }
+            
+            #board li:nth-child(3), #board li:nth-last-child(3) {
+                opacity: .6;
+            }
+    
+    /* Footer */
+    #content h2 {
+        clear: both;
+        font-style: italic;
+        font-weight: normal;
+        padding: 60px 0 60px 170px;
+    }
+    
+    #content #fb, #content #postman {
+        margin: 0 0 20px 130px;
+        color: #a3a3a3;
+    }
+    
+        #content #fb a, #content #postman a {
+            padding-left: 40px;
+        }
+        
+        #content #fb a {
+            background: url('../img/fb-hand.png') 5px 0 no-repeat;
+        }
+        
+        #content #postman a {
+            background: url('../img/postbox.png') 12px 1px no-repeat;
+        }
+        
+            #content #postman span {
+                font-size: 15px;
+            }
