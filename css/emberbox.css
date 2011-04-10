@@ -172,7 +172,8 @@ a {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 790px),
+screen and (max-device-width: 480px) {
     #content {
         margin-left: 0;
         border: none;
