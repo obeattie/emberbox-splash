@@ -65,7 +65,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 1;
-    width: 650px;
+    width: 670px;
 }
 
     /* Arrivals board */
@@ -104,7 +104,7 @@ a {
             #board .status {
                 text-transform: uppercase;
                 color: #6b6b6b;
-                width: 150px;
+                width: 170px;
             }
             
             #board li:first-child, #board li:last-child {
@@ -151,3 +151,38 @@ a {
         #content #email a {
             background: url('../img/envelope.png') 9px 5px no-repeat;
         }
+
+/* Adaptive screen size */
+@media screen and (max-width: 1300px) {
+    #content {
+        margin-left: 100px;
+    }
+    
+    #heading {
+        background-position: 195px center;
+        top: 60px;
+    }
+    
+        #heading h3 {
+            margin-left: 270px;
+        }
+    
+    #board {
+        padding-top: 210px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #content {
+        margin-left: 0;
+        border: none;
+    }
+    
+    #heading {
+        background-position: 95px center;
+    }
+    
+        #heading h3 {
+            margin-left: 170px;
+        }
+}
